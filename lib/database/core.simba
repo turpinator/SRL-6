@@ -1,0 +1,12 @@
+type
+  TDatabaseServer = record
+    host : String;
+    port : String;
+  end;
+
+  TDatabase = record
+    server : TDatabaseServer;
+  end;
+
+// TDatabase.__receive()
+// TDatabase.__send()
