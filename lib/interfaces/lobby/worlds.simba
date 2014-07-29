@@ -347,7 +347,7 @@ begin
   if (not self.isOpen()) then
     exit();
 
-  s := tesseractGetText(self.x + 550, self.y + 62, self.x+self.w - 15, self.y + 80, FILTER_SMALL_CHARS_2);
+  s := tesseractGetText(self.x + 160, self.y + 435, self.x + 240, self.y + 455, FILTER_SMALL_CHARS_2);
   n := strToIntDef(extractFromStr(s, numbers), -1);
 
   if (self._isWorldValid(n)) then
